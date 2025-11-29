@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  --primary-dark: #0a1628;
+  --secondary-dark: #1a237e;
+  --background-white: #ffffff;
+  --off-white: #fafafa;
+  --gold: #FFA000;
+  --blue: #1976D2;
+  --green: #388E3C;
+  --gray-text: #212121;
+  --light-gray-text: #757575;
+}
+
+@theme inline {
+  --color-primary-dark: var(--primary-dark);
+  --color-secondary-dark: var(--secondary-dark);
+  --color-background: var(--background-white);
+  --color-off-white: var(--off-white);
+  --color-gold: var(--gold);
+  --color-blue: var(--blue);
+  --color-green: var(--green);
+  --color-gray-text: var(--gray-text);
+  --color-light-gray-text: var(--light-gray-text);
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background-white);
+  color: var(--gray-text);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
